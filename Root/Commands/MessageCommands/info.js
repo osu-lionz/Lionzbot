@@ -21,7 +21,7 @@ module.exports = {
 
             const embed = new MessageEmbed()
                 .setColor('#B65FCF')
-                .setTitle(`General information of Aogiri Server`)
+                .setTitle(`General information of Lionz Server`)
                 .setURL(`https://${botConfig.domain.replace('https://','')}/`)
                 .setDescription(`**Total players:** ${playercount.data.counts.total}\n**Online players:** ${playercount.data.counts.online}\n**Last registered**: ${lastplayer.data.player.info.name} from :flag_${lastplayer.data.player.info.country}:\n\n**Website:** [${(botConfig.domain.replace('https://','')).replace('/','')}](${botConfig.domain})\n**API (for dev purposes):** [${botConfig.apidomain}](${botConfig.apidomain})\n\nIf you want to know how API works, please check this page: https://github.com/JKBGL/gulag-api-docs\n\nIf you want to know how to connect to the server, check this tutorial: https://imgur.com/a/iA6OxcS`)
                 .setThumbnail(`https://${botConfig.logourl.replace('https://','')}`)
